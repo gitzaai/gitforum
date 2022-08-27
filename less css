@@ -1,0 +1,111 @@
+/* 搜索结果关键字高亮 */
+		.DiscussionListItem-main mark {
+			background: #ffff80 !important;
+		}
+
+/* 搜索框 */
+.Search-input input {
+    border-radius: 30px;
+}
+
+ul.IndexPage-toolbar-action>li:not(:first-child) {
+    margin-top: 5px;
+}
+.IndexPage-toolbar-action {
+    margin-left: 15px;
+}
+.UserCard.UserCard--popover,
+.UserCard.Hero.UserHero {
+    background: none !important;
+}
+
+.UserCard .Button {
+    color: #667c99;
+    background: rgba(0,0,0,.1);
+}
+
+/* 替换点赞, 回复按钮 */
+.item-like .Button--link .Button-label,
+.item-reply .Button--link .Button-label{
+    display: none;
+}
+.item-like .Button:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 14px;
+    content: '\f164';
+    vertical-align: -1px;
+}
+.item-reply .Button--link:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 15px;
+    content: '\f3e5';
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+
+@media (min-width: 768px){
+    .no-touch .CommentPost aside.Post-actions {
+         opacity: 1;
+    }
+    .Reactions .Reactions--reactions .Button-emoji-parent{
+        background-color: #ffffff;
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+        border-radius: 3rem;
+        padding: 6px 5px;
+        transition: all .2s ease-in-out
+    }
+    .Reactions .Reactions--reactions .Button-emoji-parent:hover{
+        webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+        box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    }
+    .Reactions{    
+        line-height: 1;
+        margin-right: 0px !important;
+    }
+    .Reactions .Button-label {
+        margin-left: 0px !important;
+    }
+    .no-touch .CommentPost .Post-actions ul>li:not(.item-react):not(.item-like):not(.item-reply)[class] {
+        opacity: 0;
+        transition: all .1s ease-in-out
+    }
+    .no-touch .CommentPost :hover .Post-actions ul>li:not(.item-react):not(.item-like):not(.item-reply)[class] {
+        opacity: 1;
+        transition: all .1s ease-in-out
+    }
+    .item-votes .CommentPost-votes .Post-vote {
+        background-color: rgba(0,0,0,0);
+        border: none;
+        margin: 0px;
+    }
+    .Reactions{    
+        line-height: 1;
+        margin-right: 0px !important;
+    }
+    aside.Post-actions>ul{
+        display: inline-flex;
+        align-items: center;
+    }
+    .Reactions button{    
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .Reactions .Reactions--ShowReactions {
+        margin-right: 7px;
+    }
+    .Reactions .Reactions--react {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+    .Reactions--react{
+        margin-right: 4px;
+    }
+}
+/* 置顶高亮 */
+.DiscussionList-discussions li[data-id="/* Discussion ID */"] {
+    //Custom CSS
+}
+
