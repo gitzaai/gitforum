@@ -125,4 +125,16 @@ ul.IndexPage-toolbar-action>li:not(:first-child) {
 button.Hero-close.Button.Button--icon.Button--link.hasIcon {
   display: none  
 }
-	
+
+/* 帖子内容与头像隔开线条 */	
+.Post-body {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+}
+
+/* 帖子头部与头像隔开线条 */
+.Post-header {
+    border-left: 1px solid #000;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
