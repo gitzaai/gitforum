@@ -141,7 +141,7 @@ button.Hero-close.Button.Button--icon.Button--link.hasIcon {
 
   /*首页顶部条 */
     .IndexPage-toolbar::after {
-        content: "Welcome To CAKA Planet | 欢迎来到咔咔星球";
+        content: "Welcome To Gitzaai | 欢迎来到极摘网";
         padding: 10px;
         background-color: #ff9191;
         color: #ffffff;
