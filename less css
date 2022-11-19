@@ -1,6 +1,7 @@
 /* 搜索结果关键字高亮 */
 		.DiscussionListItem-main mark {
-			background: #ffff80 !important;
+			background: #C6FF00 !important;
+ border-radius: 0px;
 		}
 
 /* 搜索框 */
