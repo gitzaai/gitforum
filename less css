@@ -154,3 +154,29 @@ button.Hero-close.Button.Button--icon.Button--link.hasIcon {
         display: block;
         margin: 5px 0;
     }
+
+/* 返回顶部按钮 */
+.scrollToTop{
+width: 36px;
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+bottom: 80px;
+font-size: 16px;
+margin-bottom: 0;
+text-align: center;
+cursor: pointer;
+border-radius: @border-radius;
+padding: 6px 0;
+color: white;
+background: black;
+opacity: 0.7;
+border: 0;
+font-weight: 900;
+    position:fixed;
+    right:30px;
+    display:none;
+  z-index: 1000;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+background-color: darken(fadein(@control-bg, 50%), 50%);
+}
