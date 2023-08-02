@@ -601,11 +601,11 @@ background-color: darken(fadein(@control-bg, 50%), 50%);
 		}
 /* hot-discussions-cards修正中文 */
 .card p {
-     line-height: 1.5em;
-    font-size: 14px;
+    line-height: 1.5em!important;
+    font-size: 14px!important;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    padding-top: 3px;
+    margin-bottom: 25px;
 }
