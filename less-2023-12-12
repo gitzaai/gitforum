@@ -1,0 +1,621 @@
+/* 搜索关键词高亮 */
+.DiscussionListItem-main mark {background: #C6FF00 !important;
+border-radius: 0px;
+}
+
+/* 搜索框 */
+.Search-input input {
+    border-radius: 30px;
+}
+
+ul.IndexPage-toolbar-action>li:not(:first-child) {
+    margin-top: 5px;
+}
+.IndexPage-toolbar-action {
+    margin-left: 15px;
+}
+.UserCard.UserCard--popover,
+.UserCard.Hero.UserHero {
+    background: none !important;
+}
+
+.UserCard .Button {
+    color: #667c99;
+    background: rgba(0,0,0,.1);
+}
+
+/* 替换点赞, 回复按钮 */
+.item-like .Button--link .Button-label,
+.item-reply .Button--link .Button-label{
+    display: none;
+}
+.item-like .Button:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 14px;
+    content: '\f164';
+    vertical-align: -1px;
+}
+.item-reply .Button--link:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 15px;
+    content: '\f3e5';
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+
+
+
+/* 置顶高亮 */
+.DiscussionList-discussions li[data-id="/* Discussion ID */"] {
+    //Custom CSS
+}
+
+/* 取消Hero关闭按钮 */
+.Hero-close{
+	display:none;
+	}
+
+/* 帖子内容与头像隔开 */
+.Post-body {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+}
+
+/* 返回顶部按钮 */
+.scrollToTop{
+width: 36px;
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+bottom: 80px;
+font-size: 16px;
+margin-bottom: 0;
+text-align: center;
+cursor: pointer;
+border-radius: @border-radius;
+padding: 6px 0;
+color: white;
+background: black;
+opacity: 0.7;
+border: 0;
+font-weight: 900;
+    position:fixed;
+    right:30px;
+    display:none;
+  z-index: 1000;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+background-color: darken(fadein(@control-bg, 50%), 50%);
+}
+
+/* 主题列表透明 */
+
+.DiscussionListItem, .Post {
+  background: transparent;
+}
+
+/* 搜索结果关键字高亮 */
+		.DiscussionListItem-main mark {
+			background: #C6FF00 !important;
+ border-radius: 0px;
+		}
+/* 返回顶部按钮 */
+.scrollToTop{
+width: 36px;
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+bottom: 80px;
+font-size: 16px;
+margin-bottom: 0;
+text-align: center;
+cursor: pointer;
+border-radius: @border-radius;
+padding: 6px 0;
+color: white;
+background: black;
+opacity: 0.7;
+border: 0;
+font-weight: 900;
+    position:fixed;
+    right:30px;
+    display:none;
+  z-index: 1000;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+background-color: darken(fadein(@control-bg, 50%), 50%);
+}
+
+
+/* 点赞回复按钮 */
+.item-like .Button-label {
+	display: none;
+}
+.item-like .Button:before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	font-size: 17px;
+	content: '\f164';
+	margin-right: 4px;
+	vertical-align: -1px;
+}
+.item-reply .Button--link:before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	font-size: 17px;
+	content: '\f3e5';
+	margin-right: 4px;
+	vertical-align: -1px;
+}
+.item-reply .Button--link .Button-label {
+	display: none;
+}
+
+	/* 页脚 ↓ */
+		footer {
+			/*设置页脚上下外边距、左右边距平均分配*/
+			background-color: #fff;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			/*与网页同宽*/
+			box-shadow: 0 -2px 8px #eee;
+			/*阴影*/
+		}
+		
+		.footer-content {
+			width: 800px;
+			margin: 0 auto;
+			padding: 50px 0;
+			/*上下外边距*/
+			display: flex;
+			flex-wrap: nowrap;
+			/*不换行*/
+			justify-content: space-between;
+		}
+		
+		.site-info p.cpright {
+			padding-top: 10px;
+			border-top: 1px solid lightgray;
+			margin-top: 15px;
+		}
+		
+		.site-info,
+		.cc-footer-license {
+			width: 3800px;
+			/*两个区块的宽度*/
+			color: #aaabab;
+			/*区块内文字颜色*/
+		}
+		
+		.site-info {
+			text-align: left;
+			/*文本左对齐*/
+			line-height: 100%;
+			/*文字行高*/
+			padding-right: 20px;
+		}
+		
+		.site-info a,
+		.cc-footer-license a {
+			/*设置页脚超链接文字的颜色*/
+			color: #aaabab;
+			text-decoration: none;
+		}
+		
+		.site-info a:hover,
+		.cc-footer-license a:hover {
+			/*设置页脚超链接鼠标悬停颜色*/
+			color: #ea4c89;
+		}
+		/* 页脚 ↑ */
+		
+		/* 页脚响应式设计 ↓ */
+		@media (max-width:1000px) {
+		
+			/*使用CSS媒体查询来完成响应式设计。当括号中的表达式值为false时，执行大括号中的语句。*/
+			/*浏览器宽度小于1000px时，执行下方的语句*/
+			.footer-content {
+				/*对主要的三大区块和页脚区块同时设置共同的样式*/
+				width: 90%;
+				/*内容区域的宽度。我们希望整个网页内容显示宽度就这么宽，所以接下来的每一个主盒子内容宽度都保持一致*/
+				margin: 0 auto;
+				/*上下外边距为0，右左外边距为auto自动平均分配：左右一样多→居中。*/
+			}
+		
+			.footer-content {
+				margin: 0 auto;
+				padding: 30px 0;
+				/*上下外边距*/
+				display: block;
+			}
+		
+			.footer-content .site-info,
+			.cc-footer-license {
+				margin-bottom: 0px;
+				width: 100%;
+			}
+		
+			.site-info {
+				margin-top: 10px;
+				padding-right: 0px;
+			}
+		}
+		
+		/* 页脚响应式设计 ↑ */
+		
+		/* 页脚黑暗模式 */
+		.dark footer.bottomFooter {
+			background-color: #13181e;
+			box-shadow: 0 -2px 8px #00000059;
+		}
+		
+		/* 页脚动画 */
+		.xintiao {
+			/* 心跳动画 */
+			-webkit-animation: tongtong 0.8s infinite cubic-bezier(0.13, 1.04, 0.83, 1.28);
+			animation: tongtong 0.8s infinite cubic-bezier(0.13, 1.04, 0.83, 1.28);
+			display: inline-block;
+			margin: 0 5px;
+		}
+		
+		@-webkit-keyframes tongtong {
+		
+			/* 心跳 */
+			0% {
+				-webkit-transform: scale(1)
+			}
+		
+			50% {
+				-webkit-transform: scale(.8)
+			}
+		
+			to {
+				-webkit-transform: scale(1)
+			}
+		}
+		
+		@keyframes tongtong {
+			0% {
+				-webkit-transform: scale(1);
+				transform: scale(1)
+			}
+		
+			50% {
+				-webkit-transform: scale(.8);
+				transform: scale(.8)
+			}
+		
+			to {
+				-webkit-transform: scale(1);
+				transform: scale(1)
+			}
+		}
+		
+		.my-face {
+			/* 页脚笑脸动画 */
+			-webkit-animation: haha 5s infinite ease-in-out;
+			animation: haha 5s infinite ease-in-out;
+			display: inline-block;
+			margin: 0 5px;
+		}
+		
+		@-webkit-keyframes haha {
+		
+			2%,
+			24%,
+			80% {
+				-webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+				transform: translate(0, 1.5px) rotate(1.5deg)
+			}
+		
+			4%,
+			68%,
+			98% {
+				-webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+				transform: translate(0, -1.5px) rotate(-.5deg)
+			}
+		
+			38%,
+			6% {
+				-webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+				transform: translate(0, 1.5px) rotate(-1.5deg)
+			}
+		
+			8%,
+			86% {
+				-webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+				transform: translate(0, -1.5px) rotate(-1.5deg)
+			}
+		
+			10%,
+			72% {
+				-webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+				transform: translate(0, 2.5px) rotate(1.5deg)
+			}
+		
+			12%,
+			64%,
+			78%,
+			96% {
+				-webkit-transform: translate(0, -.5px) rotate(1.5deg);
+				transform: translate(0, -.5px) rotate(1.5deg)
+			}
+		
+			14%,
+			54% {
+				-webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+				transform: translate(0, -1.5px) rotate(1.5deg)
+			}
+		
+			16% {
+				-webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+				transform: translate(0, -.5px) rotate(-1.5deg)
+			}
+		
+			18%,
+			22% {
+				-webkit-transform: translate(0, .5px) rotate(-1.5deg);
+				transform: translate(0, .5px) rotate(-1.5deg)
+			}
+		
+			20%,
+			36%,
+			46% {
+				-webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+				transform: translate(0, -1.5px) rotate(2.5deg)
+			}
+		
+			26%,
+			50% {
+				-webkit-transform: translate(0, .5px) rotate(.5deg);
+				transform: translate(0, .5px) rotate(.5deg)
+			}
+		
+			28% {
+				-webkit-transform: translate(0, .5px) rotate(1.5deg);
+				transform: translate(0, .5px) rotate(1.5deg)
+			}
+		
+			30%,
+			40%,
+			62%,
+			76%,
+			88% {
+				-webkit-transform: translate(0, -.5px) rotate(2.5deg);
+				transform: translate(0, -.5px) rotate(2.5deg)
+			}
+		
+			32%,
+			34%,
+			66% {
+				-webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+				transform: translate(0, 1.5px) rotate(-.5deg)
+			}
+		
+			42% {
+				-webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+				transform: translate(0, 2.5px) rotate(-1.5deg)
+			}
+		
+			44%,
+			70% {
+				-webkit-transform: translate(0, 1.5px) rotate(.5deg);
+				transform: translate(0, 1.5px) rotate(.5deg)
+			}
+		
+			48%,
+			74%,
+			82% {
+				-webkit-transform: translate(0, -.5px) rotate(.5deg);
+				transform: translate(0, -.5px) rotate(.5deg)
+			}
+		
+			52%,
+			56%,
+			60% {
+				-webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+				transform: translate(0, 2.5px) rotate(2.5deg)
+			}
+		
+			58% {
+				-webkit-transform: translate(0, .5px) rotate(2.5deg);
+				transform: translate(0, .5px) rotate(2.5deg)
+			}
+		
+			84% {
+				-webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+				transform: translate(0, 1.5px) rotate(2.5deg)
+			}
+		
+			90% {
+				-webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+				transform: translate(0, 2.5px) rotate(-.5deg)
+			}
+		
+			92% {
+				-webkit-transform: translate(0, .5px) rotate(-.5deg);
+				transform: translate(0, .5px) rotate(-.5deg)
+			}
+		
+			94% {
+				-webkit-transform: translate(0, 2.5px) rotate(.5deg);
+				transform: translate(0, 2.5px) rotate(.5deg)
+			}
+		
+			0%,
+			100% {
+				-webkit-transform: translate(0, 0) rotate(0);
+				transform: translate(0, 0) rotate(0)
+			}
+		}
+		
+		@keyframes haha {
+		
+			2%,
+			24%,
+			80% {
+				/* -webkit-transform: translate(0, 1.5px) rotate(1.5deg); */
+				/* transform: translate(0, 1.5px) rotate(1.5deg); */
+			}
+		
+			4%,
+			68%,
+			98% {
+				/* -webkit-transform: translate(0, -1.5px) rotate(-.5deg); */
+				/* transform: translate(0, -1.5px) rotate(-.5deg) */
+			}
+		
+			38%,
+			6% {
+				/* -webkit-transform: translate(0, 1.5px) rotate(-1.5deg); */
+				/* transform: translate(0, 1.5px) rotate(-1.5deg); */
+			}
+		
+			8%,
+			86% {
+				-webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+				transform: translate(0, -1.5px) rotate(-1.5deg)
+			}
+		
+			10%,
+			72% {
+				-webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+				transform: translate(0, 2.5px) rotate(1.5deg)
+			}
+		
+			12%,
+			64%,
+			78%,
+			96% {
+				-webkit-transform: translate(0, -.5px) rotate(1.5deg);
+				transform: translate(0, -.5px) rotate(1.5deg)
+			}
+		
+			14%,
+			54% {
+				-webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+				transform: translate(0, -1.5px) rotate(1.5deg)
+			}
+		
+			16% {
+				-webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+				transform: translate(0, -.5px) rotate(-1.5deg)
+			}
+		
+			18%,
+			22% {
+				-webkit-transform: translate(0, .5px) rotate(-1.5deg);
+				transform: translate(0, .5px) rotate(-1.5deg)
+			}
+		
+			20%,
+			36%,
+			46% {
+				-webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+				transform: translate(0, -1.5px) rotate(2.5deg)
+			}
+		
+			26%,
+			50% {
+				-webkit-transform: translate(0, .5px) rotate(.5deg);
+				transform: translate(0, .5px) rotate(.5deg)
+			}
+		
+			28% {
+				-webkit-transform: translate(0, .5px) rotate(1.5deg);
+				transform: translate(0, .5px) rotate(1.5deg)
+			}
+		
+			30%,
+			40%,
+			62%,
+			76%,
+			88% {
+				-webkit-transform: translate(0, -.5px) rotate(2.5deg);
+				transform: translate(0, -.5px) rotate(2.5deg)
+			}
+		
+			32%,
+			34%,
+			66% {
+				-webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+				transform: translate(0, 1.5px) rotate(-.5deg)
+			}
+		
+			42% {
+				-webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+				transform: translate(0, 2.5px) rotate(-1.5deg)
+			}
+		
+			44%,
+			70% {
+				-webkit-transform: translate(0, 1.5px) rotate(.5deg);
+				transform: translate(0, 1.5px) rotate(.5deg)
+			}
+		
+			48%,
+			74%,
+			82% {
+				-webkit-transform: translate(0, -.5px) rotate(.5deg);
+				transform: translate(0, -.5px) rotate(.5deg)
+			}
+		
+			52%,
+			56%,
+			60% {
+				-webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+				transform: translate(0, 2.5px) rotate(2.5deg)
+			}
+		
+			58% {
+				-webkit-transform: translate(0, .5px) rotate(2.5deg);
+				transform: translate(0, .5px) rotate(2.5deg)
+			}
+		
+			84% {
+				-webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+				transform: translate(0, 1.5px) rotate(2.5deg)
+			}
+		
+			90% {
+				-webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+				transform: translate(0, 2.5px) rotate(-.5deg)
+			}
+		
+			92% {
+				-webkit-transform: translate(0, .5px) rotate(-.5deg);
+				transform: translate(0, .5px) rotate(-.5deg)
+			}
+		
+			94% {
+				-webkit-transform: translate(0, 2.5px) rotate(.5deg);
+				transform: translate(0, 2.5px) rotate(.5deg)
+			}
+		
+			0%,
+			100% {
+				-webkit-transform: translate(0, 0) rotate(0);
+				transform: translate(0, 0) rotate(0)
+			}
+		}
+
+
+
+
+/* 首页列表用户演示 */
+.DiscussionListItem-info .username {
+    color: #ff7866;
+}
+/* 首页列表发布时间颜色 */
+.DiscussionListItem-info {
+	color: #76b4ff;
+}
+/* 首页左侧标签字体 */
+.Button-label {
+    font-size: 16px;
+}
+/* 首页列表标题字体 */
+.DiscussionListItem-title {
+    font-size: 18px;
+}
