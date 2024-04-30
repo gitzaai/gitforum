@@ -8,21 +8,6 @@ border-radius: 0px;
     border-radius: 30px;
 }
 
-ul.IndexPage-toolbar-action>li:not(:first-child) {
-    margin-top: 5px;
-}
-.IndexPage-toolbar-action {
-    margin-left: 15px;
-}
-.UserCard.UserCard--popover,
-.UserCard.Hero.UserHero {
-    background: none !important;
-}
-
-.UserCard .Button {
-    color: #667c99;
-    background: rgba(0,0,0,.1);
-}
 
 /* 替换点赞, 回复按钮 */
 .item-like .Button--link .Button-label,
@@ -47,108 +32,36 @@ ul.IndexPage-toolbar-action>li:not(:first-child) {
 
 
 
-/* 置顶高亮 */
-.DiscussionList-discussions li[data-id="/* Discussion ID */"] {
-    //Custom CSS
-}
-
 /* 取消Hero关闭按钮 */
 .Hero-close{
 	display:none;
 	}
 
-/* 帖子内容与头像隔开 */
-.Post-body {
-    border-left: 1px solid #000;
-    padding-left: 10px;
-}
 
 /* 返回顶部按钮 */
 .scrollToTop{
-width: 36px;
--webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-bottom: 80px;
-font-size: 16px;
-margin-bottom: 0;
-text-align: center;
-cursor: pointer;
-border-radius: @border-radius;
-padding: 6px 0;
-color: white;
-background: black;
-opacity: 0.7;
-border: 0;
-font-weight: 900;
-    position:fixed;
-    right:30px;
-    display:none;
-  z-index: 1000;
+    width: 36px;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    bottom: 80px;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 18px;
+    padding: 6px 0;
+    color: #ffffff;
+    background: #b4d538;
+    opacity: 0.7;
+    border: 0;
+    font-weight: 900;
+    position: fixed;
+    right: 30px;
+    display: none;
+    z-index: 1000;
 }
 .scrollToTop:hover{
     text-decoration:none;
 background-color: darken(fadein(@control-bg, 50%), 50%);
-}
-
-/* 主题列表透明 */
-
-.DiscussionListItem, .Post {
-  background: transparent;
-}
-
-/* 搜索结果关键字高亮 */
-		.DiscussionListItem-main mark {
-			background: #C6FF00 !important;
- border-radius: 0px;
-		}
-/* 返回顶部按钮 */
-.scrollToTop{
-width: 36px;
--webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-bottom: 80px;
-font-size: 16px;
-margin-bottom: 0;
-text-align: center;
-cursor: pointer;
-border-radius: @border-radius;
-padding: 6px 0;
-color: white;
-background: black;
-opacity: 0.7;
-border: 0;
-font-weight: 900;
-    position:fixed;
-    right:30px;
-    display:none;
-  z-index: 1000;
-}
-.scrollToTop:hover{
-    text-decoration:none;
-background-color: darken(fadein(@control-bg, 50%), 50%);
-}
-
-
-/* 点赞回复按钮 */
-.item-like .Button-label {
-	display: none;
-}
-.item-like .Button:before {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 600;
-	font-size: 17px;
-	content: '\f164';
-	margin-right: 4px;
-	vertical-align: -1px;
-}
-.item-reply .Button--link:before {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 600;
-	font-size: 17px;
-	content: '\f3e5';
-	margin-right: 4px;
-	vertical-align: -1px;
-}
-.item-reply .Button--link .Button-label {
-	display: none;
 }
 
 	/* 页脚 ↓ */
@@ -600,22 +513,32 @@ background-color: darken(fadein(@control-bg, 50%), 50%);
 			}
 		}
 
-
-
-
 /* 首页列表用户演示 */
 .DiscussionListItem-info .username {
     color: #ff7866;
 }
+
 /* 首页列表发布时间颜色 */
 .DiscussionListItem-info {
 	color: #76b4ff;
 }
+
 /* 首页左侧标签字体 */
 .Button-label {
     font-size: 16px;
 }
+
 /* 首页列表标题字体 */
 .DiscussionListItem-title {
     font-size: 18px;
+}
+
+/* 楼层颜色 */
+.DiscussionListItem .DiscussionId {
+    color: #fcfcfc;
+}
+
+/* 观看颜色 */
+.item-discussion-views {
+    color: var(--muted-color);
 }
