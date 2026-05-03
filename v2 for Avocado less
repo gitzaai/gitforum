@@ -1,0 +1,4 @@
+/* heroBanner背景颜色 */
+.AvocadoHome-heroBanner {
+  background: #5c5d9d !important;
+}
